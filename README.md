@@ -34,7 +34,7 @@ Git log --decorate: Lista o histórico de commits na branch atual.
 
 2. Tente usar `git log --graph --all`. O que acontece?
 ```
-Retorna o histórico de commits em todas as branchs, isto com a representação gráfica das branchs no lado esquerdo.
+Retorna o histórico de commits em todas as branches, isto com a representação gráfica das branches no lado esquerdo.
 ```
 
 3. Use `git diff BRANCH_NAME`  para ver as diferenças de um ramo e do ramo atual.
@@ -65,7 +65,7 @@ index ae64e6b..e69de29 100644
 -}
 
 Acima é possível visualizar as diferenças que foram retornadas no terminal, 
-os que possuem "-" significa que são ausências e o "+" significa que possue aquele dado a mais.
+as linhas que possuem "-", significam ausências de código em relação a outra branch especificada e o "+", tem o sigificado de possuir algo a mais do que o outra branch.
 ```
 
 4. Escreva uma sequencia de comandos para mesclar o ramo não-master no `master`
@@ -80,7 +80,7 @@ git merge feature-foo
 e (ii) mudar para este ramo
 
 ```
-git checkout -b math -> Cria nova branch e já altera para ela.
+git checkout -b math -> Cria nova branch e já muda o ramo para a branch criada.
 ```
    
 6. Edite B.java adicionando o código abaixo ao conteúdo do arquivo
@@ -109,7 +109,7 @@ git commit -m "Alter file B.java master"
 9. Escreva uma sequência de comando para mesclar o branch `math` em` master` e descreva o que aconteceu
 ```
 git merge math
-O terminal retornou que ocorreu um conflito entre as branchs.
+O terminal retornou que ocorreu um conflito entre as branches.
 ```
    
 10. Escreva um conjunto de comandos para abortar a mesclagem
@@ -125,7 +125,7 @@ Quando ocorrer conflitos o GitHub realiza marcações, assim é só apagar as ma
 12. Escreva um comando (ou conjunto de comandos) para prosseguir com a mesclagem e atualizar o branch `master`
 ```
 git add *
-git commit -m "resolve conflicts"
+git commit -m "Resolve Conflicts"
 
-Para atualizar a branch após a resolução dos merge conflicts é necessário adicionar as modificações e após isso fazer o commit. 
+Para atualizar a branch após a resolução dos merges conflicts é necessário adicionar as modificações e após isso fazer o commit. 
 ```
